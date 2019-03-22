@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.628"
+                tools:layout_editor_absoluteX="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="46dp"
+                        android:text="Mr. Combinaciones"
+                        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                        android:textSize="27sp"
+                        android:textStyle="bold|italic"
+                        tools:text="Mr. Combinaciones" />
+
+                    <Button
+                        android:id="@+id/btnBorrar"
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:background="@color/colorAccent"
+                        android:text="Borrar"
+                        android:textSize="24sp" />
+                </LinearLayout>
+                <CheckBox
+                    android:id="@+id/checkET"
+                    style="@android:style/Widget.Material.CompoundButton.CheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Entran todos?"
+                    android:textSize="24sp" />
+
+                <CheckBox
+                    android:id="@+id/checkIO"
+                    style="@android:style/Widget.Material.CompoundButton.CheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Importa el orden?"
+                    android:textSize="24sp" />
+
+                <CheckBox
+                    android:id="@+id/checkSR"
+                    style="@android:style/Widget.Material.CompoundButton.CheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Se repite?"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Lugares o repeticiones (aplica para PR):"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/txtLugares"
+                    style="@android:style/Widget.Material.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:text="Elementos:"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/txtElementos"
+                    style="@android:style/Widget.Material.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnCalcular"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:text="Calcular"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
